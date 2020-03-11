@@ -41,9 +41,10 @@ const handleUserInput = (data) => {
   }
   if (data === 'u') {
     console.log('do a u-turn!');
+    connection.write(`Say: u-turn!`);
     let delay = 0;
     for (let i = 0; i < 2; i++) {
-      direction ++;
+      direction += 1;
       if (direction > directions.length - 1) {
         direction -= directions.length;
       }
