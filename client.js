@@ -25,6 +25,19 @@ const connect = function(name) {
 
   });
 
+  // conn.on('connect', () => {
+  //   conn.write(`Move: up`);
+  //   setTimeout(() => {
+  //     conn.write(`Move: up`);
+  //   }, 50);
+  //   setInterval(() => {
+  //     conn.write(`Move: left`);
+
+  //   }, 50);
+
+
+  // });
+
   conn.on('data', (data) => {
     console.log(data);
 
